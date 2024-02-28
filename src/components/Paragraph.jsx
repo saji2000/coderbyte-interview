@@ -7,6 +7,7 @@ const Paragraph = () => {
   };
   return (
     <div>
+      <h3>Paragrpah</h3>
       <input type="text" value={text} onChange={handleChange} />
       <p>{text}</p>
     </div>
