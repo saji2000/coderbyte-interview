@@ -8,6 +8,7 @@ import ContextApi from "./components/ContextApi";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import PhoneBook from "./components/PhoneBook";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Paragraph />
       <Counter />
       <ContextApi />
+      <PhoneBook />
     </>
   );
 }
