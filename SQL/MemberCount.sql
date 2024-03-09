@@ -36,4 +36,8 @@
  *                                                                                           *
  ********************************************************************************************/
 
- SELECT ReportsTo, COUNT(ReportsTo) AS Members, CEIL(AVG(Age)) AS 'Average Age' FROM maintable_L99ON WHERE ReportsTo IS NOT NULL GROUP BY ReportsTo ORDER BY ReportsTo
+ SELECT ReportsTo, COUNT(ReportsTo) AS Members, CEIL(AVG(Age)) AS 'Average Age' 
+ FROM maintable_L99ON 
+ WHERE ReportsTo IS NOT NULL 
+ GROUP BY ReportsTo 
+ ORDER BY ReportsTo

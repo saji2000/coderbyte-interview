@@ -16,4 +16,6 @@
 *                                                                                                                *
 *****************************************************************************************************************/
 
-SELECT Lastname, SUM(Age) AS SumAge FROM maintable_OT6J7 WHERE Lastname = 'Smith'
+SELECT Lastname, SUM(Age) AS SumAge 
+FROM maintable_OT6J7 
+WHERE Lastname = 'Smith'

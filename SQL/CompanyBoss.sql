@@ -22,4 +22,7 @@
 *                                                                                                                *
 *****************************************************************************************************************/
 
-SELECT FirstName, LastName, ReportsTo, Position, Age, CASE WHEN ReportsTo IS NULL THEN "None" ELSE CEO FROM maintable_WD9RV WHERE ReportsTo = "Jenny Richards" OR ReportsTo IS NULL ORDER BY Age
+SELECT FirstName, LastName, ReportsTo, Position, Age, CASE WHEN ReportsTo IS NULL THEN "None" ELSE CEO AS BossTitle
+FROM maintable_WD9RV 
+WHERE ReportsTo = "Jenny Richards" OR ReportsTo IS NULL 
+ORDER BY Age
